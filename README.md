@@ -195,6 +195,28 @@ If statements can be nested
 * used if function only has one line in the curly brackets
 * used if the function only takes one parameter
 * used when the function needs to return value, is only one line, then `return` can be ommitted
+    ```js
+    let sum = (a,b) => a + b;
+
+    alert(sum(1, 2));
+    ```
 
 ### Scope
 * scope refers to the idea that the variables within a function are only defined there and cannot be used outside of it without calling the function, golbal variables are top level and can be used throughout
+
+### Function declaractions v.s. expressions
+
+* declarations are executed first and look like this
+    ```js
+    function sayHi(name) {
+        alert(`Hello, ${name}`)
+    }
+    ```
+
+* expressions are run later, when they are actually reached in the code
+    ```js
+    let sayHi = function(name) {
+        alert(`Hello, ${name}`)
+    }
+    ```
+
