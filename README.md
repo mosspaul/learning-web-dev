@@ -160,7 +160,41 @@ If statements can be nested
 ### Ternary operator
 
 * tests a condition ? if true, runs this : if false, runs this - used for returning values not executing big blocks of code
-``` js
-const greeting = isSunny
-? `Nice weather we're having, wouldn't you say, ${name}!`
-: `I hate this place`
+    ``` js
+    const greeting = isSunny
+    ? `Nice weather we're having, wouldn't you say, ${name}!`
+    : `I hate this place`
+    ```
+
+### Functions
+
+* functions work the same in javascript as they do in dart
+
+    ```js
+    function myFunction() {
+        return someValue;
+    }
+    ```
+* to call functions simply call doing 
+    ```js 
+    myFunction();
+    ```
+
+### Parameters
+
+* can take in optional parameters or default parameters
+* to make a default parameter just add an equal sign with the correct value
+
+### Anonymous functions
+
+* functions that aren't named, usually used as parameters
+
+### Arrow functions
+
+* used with anonymous functions
+* used if function only has one line in the curly brackets
+* used if the function only takes one parameter
+* used when the function needs to return value, is only one line, then `return` can be ommitted
+
+### Scope
+* scope refers to the idea that the variables within a function are only defined there and cannot be used outside of it without calling the function, golbal variables are top level and can be used throughout
