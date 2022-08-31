@@ -1,30 +1,56 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Function scope example</title>
+    <meta charset="utf-8"/>
+    <title>Loops: Task 3</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
   </head>
-<body>
 
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
   <script>
-    const x = 3;
+    let i = 500;
+    const para = document.createElement('p');
 
-    function a() {
-      const y = 2;
-      output(y);
+    function isPrime(num) {
+      for(let i = 2; i < num; i++) {
+        if(num % i === 0) {
+          return false;
+        }
+      }
+
+      return true;
     }
 
-    function b() {
-      const z = x ** 3;
-      output(z);
+
+    // Add your code here
+    let currentNum = 2;
+    while (currentNum <= i) {
+      if (isPrime(currentNum)) {
+        para.appendChild(document.createTextNode(`\n${currentNum}`))
+      }
+      currentNum++;
     }
 
-    function output(value) {
-      const para = document.createElement('p');
-      document.body.appendChild(para);
-      para.textContent = `Value: ${value}`;
-    }
+    // Don't edit the code below here!
+    const section = document.querySelector('section');
+    section.appendChild(para);
   </script>
-</body>
+
 </html>
