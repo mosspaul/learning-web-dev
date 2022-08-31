@@ -58,7 +58,6 @@ There are a few main string methods:
     ```
 
 ### Working with conditionals
-
 * Some examples with numbers
     ```js
     alert( 2 > 1 );  // true 
@@ -138,7 +137,6 @@ If statements can be nested
     ```
 
 ### Switch statements
-
 * switch in action
     ```js
     switch (expression) {
@@ -158,7 +156,6 @@ If statements can be nested
     ```
 
 ### Ternary operator
-
 * tests a condition ? if true, runs this : if false, runs this - used for returning values not executing big blocks of code
     ``` js
     const greeting = isSunny
@@ -167,7 +164,6 @@ If statements can be nested
     ```
 
 ### Functions
-
 * functions work the same in javascript as they do in dart
 
     ```js
@@ -181,16 +177,13 @@ If statements can be nested
     ```
 
 ### Parameters
-
 * can take in optional parameters or default parameters
 * to make a default parameter just add an equal sign with the correct value
 
 ### Anonymous functions
-
 * functions that aren't named, usually used as parameters
 
 ### Arrow functions
-
 * used with anonymous functions
 * used if function only has one line in the curly brackets
 * used if the function only takes one parameter
@@ -249,5 +242,51 @@ If statements can be nested
 * `slice()` slices out a peice of an array and returns an new one, can take two arguments to specify range of indices
 * `splice()` for adding new items to array takes first parameter for defining position, second for defining number of removed elements and third the items to be added
 
+### For loops
 
+* looping through collections such as arrays is very common
+    ```js
+    const cats = ["Leopard", "Jaguar", "Kitty"];
+    for (const cat of cats) {
+        console.log(cat);
+    }
+    ```
+* there are specialized loops to use for arrays, such as `map()` and `filter()` usually used with function expressions
+    ```js
+    const cats = ["Leopard", "Jaguar", "Kitty"];
+
+    //with map
+    const mapped = cats.map((cat) => cat.toUpperCase());
+
+    // with filter 
+    const filtered= cats.filter((cat) => cat.startsWith("L"));
+    ```
+* the standard for loop is like this in psuedocode, the initializer is a counter variable, the condition defines when the loop stops and the final-expression usually increments the counter variable until the condition is false 
+    ```js
+    for (initializer; condition; final-expression) {
+        // code
+    }
+    ```
+* `break` simply breaks out of the current loop
+* `continue` passes on to the next iteration without breaking out of the loop and in many case doing nothing
+
+### While and do while loops 
+* the basic structure of a while loop
+    ```js
+    initializer
+    while (condition) {
+        //code
+
+        final-expression
+    }
+    ```
+* the basic structure of a do while loop
+    ```js
+    initializer
+    do {
+        // code to run
+
+        final-expression
+    } while (condition)
+    ```
 
