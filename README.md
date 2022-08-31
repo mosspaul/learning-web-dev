@@ -219,4 +219,35 @@ If statements can be nested
         alert(`Hello, ${name}`)
     }
     ```
+### Arrays
+* arrays are the javascript version of lists, used for having multiple values within one
+* arrays are often listed with the const keyword not let
+    ```js
+    // accessing item by index number
+    const cars = ["Chevy", "Saab", "BMW"];
+    let car = cars[0];
+    ```
+* arrays are a type of object
+    ```js
+    const cars = {brand: "BMW", carModel: "i8", price: 60000};
+    ```
+* arrays use the length method same as strings
+* the sort method is also available
+* iterate through an array with a for loop
+* to add an element you can use the `push()` method or the length `fruits[fruits.length] = "Lemon"` this works because instead of replacing it adds at the length, which is one past the number of items, any higher than length causes undefined holes
+
+### Array methods
+* `toString()` converts the entire array to a string
+* `join()` is similar to `toString()` but with the ability to specify separators
+* `push()` adds a new value at the end of the array
+* `pop()` removes the element at the end of the array
+* `shift()` is the same as `pop()` but starts at the beginning
+* `unshift()` adds a new value at the beginning of the array
+* `length()` see above
+* `delete()` removes item at index
+* `concat()` merges arrays into a single array
+* `slice()` slices out a peice of an array and returns an new one, can take two arguments to specify range of indices
+* `splice()` for adding new items to array takes first parameter for defining position, second for defining number of removed elements and third the items to be added
+
+
 
